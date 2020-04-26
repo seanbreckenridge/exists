@@ -2,6 +2,14 @@
 
 Got tired of doing `xargs -I {} sh -c "[ -f \"{}\" ] && echo \"{}\""` to check if a file exists while trying to script things.
 
+### Install
+
+```
+git clone https://github.com/seanbreckenridge/exists
+cd exists
+sudo make install
+```
+
 ### Usage
 
 ```

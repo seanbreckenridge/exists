@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     }
   }
 
-  // loop through input and print if file/doesnt exist (-v flag)
+  // loop through STDIN and print if exists
   char line_buffer[BUFFER_SIZE];
   size_t len;
   while (fgets(line_buffer, BUFFER_SIZE, stdin) != NULL) {
