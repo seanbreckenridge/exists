@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
   size_t len;
   while (fgets(line_buffer, BUFFER_SIZE, stdin) != NULL) {
     len = strlen(line_buffer);
+    // remove newline
     line_buffer[--len] = '\0';
     // if file exists
     if (access(line_buffer, F_OK) != -1) {
