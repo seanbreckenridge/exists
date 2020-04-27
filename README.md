@@ -1,6 +1,8 @@
 # exists
 
-Got tired of doing `xargs -I {} sh -c "[ -f \"{}\" ] && echo \"{}\""` to check if a file exists while trying to script things.
+Got tired of doing `xargs -I {} sh -c "[ -e \"{}\" ] && echo \"{}\""` to check if a files exist while trying to script things.
+
+This works for files, directories and links.
 
 ### Install
 
@@ -14,7 +16,7 @@ sudo make install
 
 ```
 Usage:	exists [-v] [-h]
-Read filenames from STDIN, prints files that exist to STDOUT
+Read filepaths from STDIN, prints ones that exist to STDOUT
 
   -h		show list of command-line options
   -v		inverts output, prints filenames that don't exist

@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
       break;
     case 'h':
       printf("Usage:\texists [-v] [-h]\n"
-             "Read filenames from STDIN, prints files that exist to STDOUT\n\n"
+             "Read filepaths from STDIN, prints ones that exist to STDOUT\n\n"
              "  -h\t\tshow list of command-line options\n"
              "  -v\t\tinverts output, prints filenames that don't exist\n");
       return 1;

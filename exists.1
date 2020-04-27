@@ -1,13 +1,15 @@
 .TH EXISTS 1 2020-04-26
 .SH NAME
-exists \- check if files exist
+exists \- check if paths exist
 .SH SYNOPSIS
 .B exists
 [\fB\-v\fR]
 [\fB\-h\fR]
 .SH DESCRIPTION
 .B exists
-reads filenames from STDIN, and prints filenames that exist to STDOUT
+reads filepaths from STDIN, print ones that exist to STDOUT
+.TP
+works for files, directories and links
 .SH OPTIONS
 .TP
 .BR \-h
