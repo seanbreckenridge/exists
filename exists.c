@@ -35,12 +35,14 @@ int main(int argc, char *argv[]) {
     // if file exists
     if (access(line_buffer, F_OK) != -1) {
       // exists, dont invert
-      if (!invert)
+      if (!invert) {
         printf("%s\n", line_buffer);
+      }
     } else {
       // doesnt exist, invert
-      if (invert)
+      if (invert) {
         printf("%s\n", line_buffer);
+      }
     }
   }
   return 0;
