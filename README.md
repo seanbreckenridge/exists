@@ -24,7 +24,7 @@ Read filepaths from STDIN, prints ones that exist to STDOUT
 
 ### Example
 
-```
+```shell
 $ { ls -1; echo 'doesnt exist' } | exists
 exists
 exists.c
