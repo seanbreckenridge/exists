@@ -7,7 +7,7 @@ This works for files, directories and links.
 ### Install
 
 ```
-git clone https://gitlab.com/seanbreckenridge/exists
+git clone https://github.com/seanbreckenridge/exists
 cd exists
 sudo make install
 ```
