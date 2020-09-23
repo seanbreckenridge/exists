@@ -2,7 +2,7 @@
 
 Got tired of doing `xargs -I {} sh -c "[ -e \"{}\" ] && echo \"{}\""` to check if a files exist while trying to script things.
 
-This works for files, directories and links.
+This receives paths from standard input, and prints any that exist; Works for files, directories and links.
 
 ### Install
 
@@ -25,9 +25,15 @@ Read filepaths from STDIN, prints ones that exist to STDOUT
 ### Example
 
 ```shell
-$ { ls -1; echo 'doesnt exist' } | exists
+$ ls
+exists  exists.1  exists.c  LICENSE  Makefile  README.md
+$ { ls -1; echo 'non_existent_file' } | exists
 exists
+exists.1
 exists.c
+LICENSE
 Makefile
 README.md
+{ ls -1; echo 'non_existent_file' } | exists -v  # print files that don't exist
+non_existent_file
 ```
