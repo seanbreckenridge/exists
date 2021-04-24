@@ -9,7 +9,7 @@ This receives paths from standard input, and prints any that exist; Works for fi
 ```
 git clone https://github.com/seanbreckenridge/exists
 cd exists
-sudo make install
+make install
 ```
 
 ### Usage
