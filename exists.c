@@ -1,6 +1,6 @@
-#include <stdio.h> // printf, fgets
+#include <stdio.h>  // printf, fgets
 #include <string.h> // strlen
-#include <unistd.h>  // access, F_OK, getopt
+#include <unistd.h> // access, F_OK, getopt
 
 #define BUFFER_SIZE 1024
 
