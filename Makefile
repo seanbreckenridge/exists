@@ -15,4 +15,3 @@ exists: exists.c
 
 clean:
 	rm -f ./exists
-

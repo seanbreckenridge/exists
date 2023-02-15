@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
              "Read filepaths from STDIN, prints ones that exist to STDOUT\n\n"
              "  -h\t\tshow list of command-line options\n"
              "  -v\t\tinverts output, prints filenames that don't exist\n");
-      return 1;
+      return 0;
     case '?':
       break;
     }
