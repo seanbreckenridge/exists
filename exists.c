@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
         printf("%s\n", line_buffer);
       }
     } else {
-      // doesnt exist, invert
+      // doesn't exist, invert
       if (invert) {
         printf("%s\n", line_buffer);
       }
