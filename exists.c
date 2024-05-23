@@ -6,6 +6,11 @@
 
 int main(int argc, char *argv[]) {
 
+  // replace --help with -h if its the only argument
+  if (argc == 2 && strcmp(argv[1], "--help") == 0) {
+    argv[1] = "-h";
+  }
+
   // handle args
   int invert = 0;
   int c;
